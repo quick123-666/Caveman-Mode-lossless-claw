@@ -1,0 +1,21 @@
+{
+  "plugins": {
+    "entries": {
+      "lossless-claw": {
+        "enabled": true,
+        "config": {
+          "contextThreshold": 0.6,
+          "freshTailCount": 16,
+          "incrementalMaxDepth": 5
+        }
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "heartbeat": {
+        "lightContext": true
+      }
+    }
+  }
+}
