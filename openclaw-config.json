@@ -1,8 +1,7 @@
 {
   "plugins": {
     "entries": {
-      "lossless-claw": {
-        "enabled": true,
+      "losslessClaw": {
         "config": {
           "contextThreshold": 0.6,
           "freshTailCount": 16,
@@ -16,6 +15,13 @@
       "heartbeat": {
         "lightContext": true
       }
+    }
+  },
+  "session": {
+    "maintenance": {
+      "rotateBytes": "1gb",
+      "maxEntries": 1000000,
+      "pruneAfter": "365d"
     }
   }
 }
